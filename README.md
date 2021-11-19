@@ -29,3 +29,13 @@
 ## License
 
 ## Contact Information
+
+
+1. Create exchange.js file 
+2. Create CurrencyExchange object 
+3. Create exchange functiona
+4. create promise 
+5. add api url 
+6. Create html page 
+7. Add UI logic in index.js
+8. add api key to env
