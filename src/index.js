@@ -5,19 +5,21 @@ import './css/styles.css';
 import CurrencyExchange from './exchange.js';
 
 $(document).ready(function() {
+  let promise = CurrencyExchange.exchange();
   $(".subButton").click(function() {
     promise.then(function(response) {
-      const body = JSON.parse(response.body);
+      const body = JSON.parse(response);
       const input = $('#currency').val();
       const amount = $('#amount').val();
       let inputCurrency = '';
-      let output = '';
       for (let i=0; i<body.length; i++) {
-        if(input === `${body[i].currency_code}`) {
+        if(input === `${body[i].conversion_rates`) {
           inputCurrency = `${body[i].conversion_rates}`;
         }
       } 
-      output = (amount * inputCurrency)
-    })
-  })
-})
+      let output = (amount * inputCurrency);
+      $('#showExchange').show();
+      return output;
+    });
+  });
+});
