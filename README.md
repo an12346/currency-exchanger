@@ -19,8 +19,8 @@ This is an application that converts USD into other forms of currency. The optio
 * Clone the repository from GitHub
 * open the file: currency-exchanger
 * type $ npm install in the terminal
-* type $ npm start build in the terminal
-* type $ npm start in the terminal to to open the application in the web browser
+* type $ npm run build in the terminal
+* type $ npm run start in the terminal to to open the application in the web browser
 
 ## Known Bugs
 
