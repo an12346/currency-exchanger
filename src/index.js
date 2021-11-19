@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import CurrencyExchange from './exchange.js';
 
-$(document).ready(function() {
+/*$(document).ready(function() {
   let promise = CurrencyExchange.exchange();
   $(".subButton").click(function() {
     promise.then(function(response) {
@@ -25,19 +25,20 @@ $(document).ready(function() {
     $('#showExchange').show();
     $('#finalAmount').text(output)
   });
-});
+});*/
  
 
 
 
 
-/*$(document).ready(function() {
+$(document).ready(function() {
   let promise = CurrencyExchange.exchange();
   $('.subButton').click(function() {
     promise.then(function(response) {
       const body = JSON.parse(response);
       const currencySelect = $('#currency').val();
       const amount = $('#amount').val();
+      let outputPrice = '';
       for(let i=0; i<body.length; i++) {
         if (currencySelect === `${body[i].conversion_rates.EUR}`) {
           let outputPrice = (amount * `${body[i].conversion_rates.EUR}`)
@@ -50,12 +51,13 @@ $(document).ready(function() {
         } else if (currencySelect === `${body[i].conversion_rates.CAD}`) {
           let outputPrice = (amount * `${body[i].conversion_rates.CAD}`)
         }
-        $('#showExchange').show();
-        $('#finalAmount').text(outputPrice);
-      }
-
-
-    })
-  })
-}) */
+      };
+    });
+    function(error) {
+      $('#showErrors').text(`Unable to process request: ${error}`);
+    }
+    $('#showExchange').show();
+    $('#finalAmount').text(outputPrice);
+  });
+});
 
