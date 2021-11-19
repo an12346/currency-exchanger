@@ -11,14 +11,13 @@ $(document).ready(function() {
       const input = $('#currency').val();
       const amount = $('#amount').val();
       let inputCurrency = '';
-      let ouput = '';
-      let usdRate = `${conversion_rates.currency_code}`;
+      let output = '';
       for (let i=0; i<body.length; i++) {
         if(input === `${body[i].currency_code}`) {
           inputCurrency = `${body[i].conversion_rates}`;
         }
       } 
-      output = (inputCurrency / usdCurrency)
+      output = (amount * inputCurrency)
     })
   })
 })
