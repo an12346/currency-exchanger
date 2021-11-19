@@ -14,7 +14,7 @@ $(document).ready(function() {
       let inputCurrency = '';
       for (let i=0; i<body.length; i++) {
         if(input === `${body[i].conversion_rates`) {
-          inputCurrency = `${body[i].conversion_rates}`;
+          inputCurrency = `${body[i].conversion_rates.}`;
         }
       } 
       let output = (amount * inputCurrency);
@@ -23,3 +23,18 @@ $(document).ready(function() {
     });
   });
 });
+
+let currencySelect = $('#currency').val();
+
+$(document).ready(function() {
+  let promise = CurrencyExchange.exchange();
+  $('.subButton').click(function() {
+    promise.then(function(response) {
+      const body = JSON.parse(response);
+      const input = $('#currency').val();
+      const amount = $('#amount').val();
+
+    })
+  })
+})
+
