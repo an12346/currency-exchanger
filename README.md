@@ -1,41 +1,40 @@
-# (Application Name)
+# Currency Exchanger
 
-#### (Brief Description of Application)
+#### An application that converts USD into other forms of currency
 
-#### By (Your Name Here)
+#### By Anna Pittman
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _JavaScript_
+* _Webpack_
 
 ## Description
+This is an application that converts USD into other forms of currency. The options for the other forms of currency are EUR, JPY, GBP, AUD, and CAD. There is an input box for the user to enter the amount of USD they would like to convert, as well as an input box for the type of currency they would like to convert the amount to.
 
 ## Setup/Installation Requirements
 
-* type $ npm init -y
-* type $ npm install webpack@4.39.3 --save-dev --save-exact
-* type $ npm install webpack-cli@3.3.8 --save-dev
-* _easy-to-understand_
-* _format_
+* Clone the repository from GitHub
+* open the file: currency-exchanger
+* type $ npm install in the terminal
+* type $ npm start build in the terminal
+* type $ npm start in the terminal to to open the application in the web browser
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _Does not show exchanged currency after clicking the submit button_
 
 ## License
 
+[GitHub Repository](https://github.com/an12346/currency-exchanger)
+
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2021 Anna Pittman
+
 ## Contact Information
 
+email: annaepittman@gmail.com
 
-1. Create exchange.js file 
-2. Create CurrencyExchange object 
-3. Create exchange functiona
-4. create promise 
-5. add api url 
-6. Create html page 
-7. Add UI logic in index.js
-8. add api key to env

@@ -26,7 +26,7 @@ $(document).ready(function() {
           } 
         };
         function(error) {
-          $('#showErrors').text(`Unable to process request: ${error}`);
+          $('#showErrors').text(`This currency does not exist: ${error}`);
           }
       });
     $('#showExchange').show();
