@@ -7,8 +7,8 @@
   <title>Currency Exchanger</title>
 </head>
 <body>
-  <div id="container">
-    <h2>USD Currency Exchanger</h2>
+  <h2>USD Currency Exchanger</h2>
+  <form id="form">
     <label for="amount">Enter amount of USD:</label>
     <input type="number" id="amount"></input>
     <label for="currency">Enter a currency:</label>
@@ -18,14 +18,12 @@
       <option value="GBP">Great British Pound(GBP)</option>
       <option value="AUD">Australian Dollar(AUD)</option>
       <option value="CAD">Canadian Dollar(CAD)</option>
-  </select>
-    <button class="subButton">Submit</button>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+  <div>
+    <div id="finalAmount">
   </div>
-  <div id="showExchange">
-    <p id="finalAmount"></p>
-  </div>
-  <div id="showErrors"></div>
-
 </body>
 </html>
 

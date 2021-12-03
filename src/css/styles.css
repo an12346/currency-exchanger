@@ -1,3 +1,7 @@
-#showExchange {
-  display: none;
+body {
+  text-align: center;
+}
+
+#finalAmount {
+  font-size: 100px;
 }
